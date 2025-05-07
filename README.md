@@ -2,6 +2,11 @@
 
 TODO
 
+## Requirements
+
+Beyond the obvious requirements of Python and pip, and the package `jupyter-book`,
+Node.js is required as well.
+
 ## Jupyter Book v2 version
 
 ```bash
