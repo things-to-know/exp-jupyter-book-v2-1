@@ -24,3 +24,15 @@ Sometimes when reading it is helpful to foster a _tranquil_ environment. The ima
 
 A photograph of some beautiful mountains to look at whilst reading.
 :::
+
+## Cross-references
+
+Hover over [this link to a cool figure](xref:guide#subfigure)!
+
+### Embedded
+
+Before embed declaration.
+
+![A cool figure with two subfigures](xref:guide#subfigure)
+
+After embed declaration.

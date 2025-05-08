@@ -174,7 +174,8 @@ project:
   # `/myst.xref.json` file that the MyST engine uses to provide cross-referencing information,
   # e.g. `https://mystmd.org/guide/myst.xref.json`
   # See: https://mystmd.org/guide/external-references#intersphinx
-  # references:
+  references:
+    guide: https://mystmd.org/guide
 
   # Files required for reproducing the executional environment, included in the MECA bundle
   # to enable portable execution
