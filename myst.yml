@@ -1,0 +1,199 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 2ea37ad2-542e-4887-ab58-645281b0a9be
+
+  # A string (max 500 chars)
+  # See: https://mystmd.org/guide/frontmatter#titles
+  title: My Project Title
+  # A string (max 500 chars)
+  # See: https://mystmd.org/guide/frontmatter#titles
+  subtitle: My Project Subtitle
+  # A string (max 40 chars)
+  # See: https://mystmd.org/guide/frontmatter#titles
+  short_title: My Project Short Title
+  # A string (max 500 chars)
+  description: My Project Description
+
+  # A link to a local or remote image
+  # thumbnail: thumbnails/myThumbnail.png
+  # A link to a local or remote image
+  # banner: banner.png
+
+  # An export object
+  # See: https://mystmd.org/guide/frontmatter#frontmatter-exports
+  # See: https://mystmd.org/guide/documents-exports
+  exports:
+    # One of `pdf` (built with LaTeX or Typst, depending on the template), `tex` (raw LaTeX files),
+    # `pdf+tex` (both PDF and raw LaTeX files), `typst` (raw Typst files and built PDF file),
+    # `docx`, `md`, `jats`, or `meca`
+    - format: docx
+      # For PDF, see: https://mystmd.org/guide/creating-pdf-documents
+      # For DOCX, see: https://mystmd.org/guide/creating-word-documents
+
+      # Name of an existing MyST template or a local path to a template folder.
+      # Templates are only available for `pdf`, `tex`, `typst`, and `docx` formats.
+      # See: https://github.com/myst-templates
+      template: default
+
+      # Export output filename with a valid extension or destination folder
+      output: my_project.docx
+
+      # Whether to zip the output; only applies for multi-file exports `tex`, `pdf+tex` and `typst`.
+      # (type: boolean)
+      # zip: true
+
+      # Path(s) to articles to include in your export
+      # (required for exports defined in project frontmatter).
+      # Not all exports currently support multiple articles.
+      # (type: list of strings)
+      articles:
+        - intro.md
+
+      # Path to jupyterbook `_toc.yml` file
+      # May be used as an alternative to listing articles
+      # toc:
+
+      # Path(s) to sub-articles for `jats` export
+      # (type: list of strings)
+      # sub_articles:
+
+  # A download object
+  # See: https://mystmd.org/guide/frontmatter#frontmatter-downloads
+  # See: https://mystmd.org/guide/website-downloads
+  # downloads:
+
+  # Use to categorize posts/articles or the project to make it easier for readers
+  # to find related content within your site.
+  # (type: list of strings)
+  tags: [
+    knowledge base,
+    wiki,
+    glossary,
+  ]
+
+  # A dictionary of arbitrary content parts e.g. `abstract`, `data_availability`
+  # See: https://mystmd.org/guide/document-parts
+  parts:
+    # A concise overview of the entire document, highlighting the main objectives, methods,
+    # results, and conclusions. It's meant to give readers a quick snapshot of what to expect
+    # without having to read the entire document.
+    # abstract:
+
+    # Plain language summary.
+    # Similar to an abstract, but can either be slightly longer and more detailed or used as
+    # a plain-language summary, depending on the context.
+    # It summarizes the document's content, including the background, purpose, methodology,
+    # results, and conclusions.
+    # Alias: `plain_language_summary`, `lay_summary`
+    # summary:
+
+    # A brief list that highlights the main findings, conclusions, or contributions of the document.
+    # Key points are often used to quickly convey the core message or most important aspects to
+    # the reader.
+    # keypoints:
+
+    # A short section where the author dedicates the document to someone, often as a gesture of
+    # honor or respect.
+    # dedication:
+
+    # A quote or poem that the author includes at the beginning of the document to set a tone
+    # or theme, or to hint at the document's underlying message. It is often relevant to the content
+    # but not directly related to it.
+    # Alias: `quote`
+    # epigraph:
+
+    # A statement or section that details how readers can access the data sets and resources used
+    # in the document. This can include links to repositories, conditions for access, and any
+    # restrictions on the data.
+    # It's crucial for transparency and reproducibility in research documents.
+    # Alias: `availability`
+    # data_availability:
+    # A section where the author thanks individuals, organizations, or agencies that contributed
+    # to the completion of the document. This can include support in the form of funding,
+    # expertise, feedback, or moral support.
+    # Alias: `ack`, `acknowledgements`
+    # acknowledgments:
+
+  # A valid date formatted string
+  # date:
+  # A list of strings
+  # keywords: []
+
+  # A list of author objects
+  # https://mystmd.org/guide/frontmatter#frontmatter-authors
+  authors:
+    - name: Germán Larraín
+      id: glarrain
+      email: 83614238+glarrain-cdd@users.noreply.github.com
+      # roles: # a list of strings - must be valid CRediT Contributor Roles
+      affiliation: Cordada SpA
+      github: glarrain-cdd
+  # A list of author objects or string ids
+  # See: https://mystmd.org/guide/frontmatter#other-contributors
+  # reviewers:
+  # A list of author objects or string ids
+  # See: https://mystmd.org/guide/frontmatter#other-contributors
+  # editors:
+  # A list of affiliation objects
+  # See: https://mystmd.org/guide/frontmatter#affiliations
+  # affiliations:
+
+  # Boolean value
+  # See: https://en.wikipedia.org/wiki/Open_access
+  # open_access: false
+
+  # A string value directly; a License object
+  # See: https://mystmd.org/guide/frontmatter#licenses
+  license: MIT
+
+  # A string
+  # copyright:
+
+  # A valid GitHub URL or `owner/reponame`
+  github: https://github.com/things-to-know/exp-jupyter-book-v2-1
+  # URL to edit the page source. If this value is unset but `github` is specified, MyST will
+  # attempt to compute the specific github URL for the page. You may disable this behavior by
+  # explicitly setting `edit_url` to `null`.
+  # edit_url:
+
+  # Any valid URL
+  # binder:
+
+  # A string (max 40 chars)
+  # subject:
+  # A dictionary of abbreviations in the project
+  # abbreviations:
+
+  # A dictionary of arbitrary options validated and consumed by templates,
+  # e.g. during site or PDF build
+  # options:
+
+  # Configuration for intersphinx references
+  # An easy way to tell if a website supports rich cross-referencing is to try and access the
+  # `/myst.xref.json` file that the MyST engine uses to provide cross-referencing information,
+  # e.g. `https://mystmd.org/guide/myst.xref.json`
+  # See: https://mystmd.org/guide/external-references#intersphinx
+  references:
+    guide: https://mystmd.org/guide
+
+  # Files required for reproducing the executional environment, included in the MECA bundle
+  # to enable portable execution
+  # requirements:
+  # Configuration for Jupyter execution (see "In-Browser Execution")
+  # See: https://mystmd.org/guide/integrating-jupyter
+  # jupyter:
+  # Configuration for Jupyter execution (see "In-Browser Execution")
+  # See: https://mystmd.org/guide/integrating-jupyter
+  # thebe:
+
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    # Auto-generated by `myst init --write-toc`
+    - file: intro.md
+
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
