@@ -2,11 +2,101 @@
 version: 1
 project:
   id: 2ea37ad2-542e-4887-ab58-645281b0a9be
+
+  # A string (max 500 chars)
+  # See: https://mystmd.org/guide/frontmatter#titles
   # title:
+  # A string (max 500 chars)
+  # See: https://mystmd.org/guide/frontmatter#titles
+  # subtitle:
+  # A string (max 40 chars)
+  # See: https://mystmd.org/guide/frontmatter#titles
+  # short_title:
+  # A string (max 500 chars)
   # description:
+
+  # A link to a local or remote image
+  # thumbnail: thumbnails/myThumbnail.png
+  # A link to a local or remote image
+  # banner: banner.png
+
+  # An export object
+  # See: https://mystmd.org/guide/frontmatter#frontmatter-exports
+  # See: https://mystmd.org/guide/documents-exports
+  # exports:
+  # A download object
+  # See: https://mystmd.org/guide/frontmatter#frontmatter-downloads
+  # See: https://mystmd.org/guide/website-downloads
+  # downloads:
+
+  # A list of strings. Use to categorize posts/articles or the project to make it easier for readers
+  # to find related content within your site.
+  # tags: []
+
+  # A dictionary of arbitrary content parts e.g. `abstract`, `data_availability`
+  # See: https://mystmd.org/guide/document-parts
+  # parts:
+  # A valid date formatted string
+  # date:
+  # A list of strings
   # keywords: []
+
+  # A list of author objects
+  # https://mystmd.org/guide/frontmatter#frontmatter-authors
   # authors: []
+  # A list of author objects or string ids
+  # See: https://mystmd.org/guide/frontmatter#other-contributors
+  # reviewers:
+  # A list of author objects or string ids
+  # See: https://mystmd.org/guide/frontmatter#other-contributors
+  # editors:
+  # A list of affiliation objects
+  # See: https://mystmd.org/guide/frontmatter#affiliations
+  # affiliations:
+
+  # Boolean value
+  # open_access: true
+
+  # A string value directly; a License object
+  # See: https://mystmd.org/guide/frontmatter#licenses
+  # license: MIT
+
+  # A string
+  # copyright:
+
+  # A valid GitHub URL or `owner/reponame`
   # github:
+  # URL to edit the page source. If this value is unset but `github` is specified, MyST will
+  # attempt to compute the specific github URL for the page. You may disable this behavior by
+  # explicitly setting `edit_url` to `null`.
+  # edit_url:
+
+  # Any valid URL
+  # binder:
+
+  # A string (max 40 chars)
+  # subject:
+  # A dictionary of abbreviations in the project
+  # abbreviations:
+
+  # A dictionary of arbitrary options validated and consumed by templates,
+  # e.g. during site or PDF build
+  # options:
+
+  # Configuration for intersphinx references
+  # See: https://mystmd.org/guide/external-references#intersphinx
+  # references:
+
+  # Files required for reproducing the executional environment, included in the MECA bundle
+  # to enable portable execution
+  # requirements:
+  # Configuration for Jupyter execution (see "In-Browser Execution")
+  # See: https://mystmd.org/guide/integrating-jupyter
+  # jupyter:
+  # Configuration for Jupyter execution (see "In-Browser Execution")
+  # See: https://mystmd.org/guide/integrating-jupyter
+  # thebe:
+
   # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
 site:
   template: book-theme
