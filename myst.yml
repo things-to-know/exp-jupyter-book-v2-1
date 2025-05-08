@@ -23,7 +23,41 @@ project:
   # An export object
   # See: https://mystmd.org/guide/frontmatter#frontmatter-exports
   # See: https://mystmd.org/guide/documents-exports
-  # exports:
+  exports:
+    # One of `pdf` (built with LaTeX or Typst, depending on the template), `tex` (raw LaTeX files),
+    # `pdf+tex` (both PDF and raw LaTeX files), `typst` (raw Typst files and built PDF file),
+    # `docx`, `md`, `jats`, or `meca`
+    - format: docx
+      # For PDF, see: https://mystmd.org/guide/creating-pdf-documents
+      # For DOCX, see: https://mystmd.org/guide/creating-word-documents
+
+      # Name of an existing MyST template or a local path to a template folder.
+      # Templates are only available for `pdf`, `tex`, `typst`, and `docx` formats.
+      # See: https://github.com/myst-templates
+      template: default
+
+      # Export output filename with a valid extension or destination folder
+      output: my_project.docx
+
+      # Whether to zip the output; only applies for multi-file exports `tex`, `pdf+tex` and `typst`.
+      # (type: boolean)
+      # zip: true
+
+      # Path(s) to articles to include in your export
+      # (required for exports defined in project frontmatter).
+      # Not all exports currently support multiple articles.
+      # (type: list of strings)
+      articles:
+        - intro.md
+
+      # Path to jupyterbook `_toc.yml` file
+      # May be used as an alternative to listing articles
+      # toc:
+
+      # Path(s) to sub-articles for `jats` export
+      # (type: list of strings)
+      # sub_articles:
+
   # A download object
   # See: https://mystmd.org/guide/frontmatter#frontmatter-downloads
   # See: https://mystmd.org/guide/website-downloads
