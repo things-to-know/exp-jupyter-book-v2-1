@@ -5,15 +5,15 @@ project:
 
   # A string (max 500 chars)
   # See: https://mystmd.org/guide/frontmatter#titles
-  # title:
+  title: My Project Title
   # A string (max 500 chars)
   # See: https://mystmd.org/guide/frontmatter#titles
-  # subtitle:
+  subtitle: My Project Subtitle
   # A string (max 40 chars)
   # See: https://mystmd.org/guide/frontmatter#titles
-  # short_title:
+  short_title: My Project Short Title
   # A string (max 500 chars)
-  # description:
+  description: My Project Description
 
   # A link to a local or remote image
   # thumbnail: thumbnails/myThumbnail.png
@@ -32,7 +32,11 @@ project:
   # Use to categorize posts/articles or the project to make it easier for readers
   # to find related content within your site.
   # (type: list of strings)
-  # tags: []
+  tags: [
+    knowledge base,
+    wiki,
+    glossary,
+  ]
 
   # A dictionary of arbitrary content parts e.g. `abstract`, `data_availability`
   # See: https://mystmd.org/guide/document-parts
@@ -84,7 +88,13 @@ project:
 
   # A list of author objects
   # https://mystmd.org/guide/frontmatter#frontmatter-authors
-  # authors: []
+  authors:
+    - name: Germán Larraín
+      id: glarrain
+      email: 83614238+glarrain-cdd@users.noreply.github.com
+      # roles: # a list of strings - must be valid CRediT Contributor Roles
+      affiliation: Cordada SpA
+      github: glarrain-cdd
   # A list of author objects or string ids
   # See: https://mystmd.org/guide/frontmatter#other-contributors
   # reviewers:
@@ -101,7 +111,7 @@ project:
 
   # A string value directly; a License object
   # See: https://mystmd.org/guide/frontmatter#licenses
-  # license: MIT
+  license: MIT
 
   # A string
   # copyright:
