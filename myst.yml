@@ -29,13 +29,54 @@ project:
   # See: https://mystmd.org/guide/website-downloads
   # downloads:
 
-  # A list of strings. Use to categorize posts/articles or the project to make it easier for readers
+  # Use to categorize posts/articles or the project to make it easier for readers
   # to find related content within your site.
+  # (type: list of strings)
   # tags: []
 
   # A dictionary of arbitrary content parts e.g. `abstract`, `data_availability`
   # See: https://mystmd.org/guide/document-parts
-  # parts:
+  parts:
+    # A concise overview of the entire document, highlighting the main objectives, methods,
+    # results, and conclusions. It's meant to give readers a quick snapshot of what to expect
+    # without having to read the entire document.
+    # abstract:
+
+    # Plain language summary.
+    # Similar to an abstract, but can either be slightly longer and more detailed or used as
+    # a plain-language summary, depending on the context.
+    # It summarizes the document's content, including the background, purpose, methodology,
+    # results, and conclusions.
+    # Alias: `plain_language_summary`, `lay_summary`
+    # summary:
+
+    # A brief list that highlights the main findings, conclusions, or contributions of the document.
+    # Key points are often used to quickly convey the core message or most important aspects to
+    # the reader.
+    # keypoints:
+
+    # A short section where the author dedicates the document to someone, often as a gesture of
+    # honor or respect.
+    # dedication:
+
+    # A quote or poem that the author includes at the beginning of the document to set a tone
+    # or theme, or to hint at the document's underlying message. It is often relevant to the content
+    # but not directly related to it.
+    # Alias: `quote`
+    # epigraph:
+
+    # A statement or section that details how readers can access the data sets and resources used
+    # in the document. This can include links to repositories, conditions for access, and any
+    # restrictions on the data.
+    # It's crucial for transparency and reproducibility in research documents.
+    # Alias: `availability`
+    # data_availability:
+    # A section where the author thanks individuals, organizations, or agencies that contributed
+    # to the completion of the document. This can include support in the form of funding,
+    # expertise, feedback, or moral support.
+    # Alias: `ack`, `acknowledgements`
+    # acknowledgments:
+
   # A valid date formatted string
   # date:
   # A list of strings
@@ -55,7 +96,8 @@ project:
   # affiliations:
 
   # Boolean value
-  # open_access: true
+  # See: https://en.wikipedia.org/wiki/Open_access
+  # open_access: false
 
   # A string value directly; a License object
   # See: https://mystmd.org/guide/frontmatter#licenses
@@ -84,6 +126,9 @@ project:
   # options:
 
   # Configuration for intersphinx references
+  # An easy way to tell if a website supports rich cross-referencing is to try and access the
+  # `/myst.xref.json` file that the MyST engine uses to provide cross-referencing information,
+  # e.g. `https://mystmd.org/guide/myst.xref.json`
   # See: https://mystmd.org/guide/external-references#intersphinx
   # references:
 
